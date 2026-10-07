@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>戸塚区体育協会（見本）</title>
+<style>
+:root{--bg:#fff;--tx:#14213d;--navy:#12306b;--blue:#1560c8;--soft:#eaf2fd;--line:#b9cbe6;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1830;--tx:#eef3fc;--navy:#9cc0f5;--blue:#7db0ff;--soft:#182a52;--line:#3a5287}}
+:root[data-theme="dark"]{--bg:#0f1830;--tx:#eef3fc;--navy:#9cc0f5;--blue:#7db0ff;--soft:#182a52;--line:#3a5287}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:18px/1.9 "Hiragino Sans","Yu Gothic",Meiryo,sans-serif;overflow-wrap:anywhere}
+a{color:var(--blue)}a:focus-visible,button:focus-visible,input:focus-visible,summary:focus-visible{outline:3px solid #f5a300;outline-offset:2px}
+.skip{position:absolute;left:-999px}.skip:focus{left:8px;top:8px;background:#fff;color:#000;padding:8px;z-index:9}
+header{background:var(--navy);color:#fff;padding:16px;border-top:6px solid var(--blue);border-bottom:1px solid var(--line)}
+header h1{margin:0;font-size:1.5rem;letter-spacing:.08em}
+h2{border-left:0!important;border-bottom:2px solid var(--line);padding:0 0 8px!important}
+h2::first-letter{color:var(--blue)}
+h2::before{content:"";display:inline-block;width:.6em;height:.6em;margin-right:.5em;background:var(--blue);border-radius:2px;vertical-align:.05em}
+header .sub{margin:2px 0 0;font-size:1rem;line-height:1.6;opacity:.92}
+header nav{margin-top:12px;border-top:1px solid rgba(255,255,255,.35)}
+header nav ul{gap:4px 20px;margin-top:4px}
+header nav a{background:transparent;color:#fff;border-radius:0;padding:8px 2px;border-bottom:3px solid transparent}
+header nav a:hover{border-bottom-color:#fff}
+header nav a:focus-visible{background:#fff;color:#12306b}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) header{color:#fff;background:#12306b}}
+#events{--ac:#c2410c;--ic:"📅"}#class{--ac:#237a35;--ic:"🏃"}#results{--ac:#862e9c;--ic:"🏆"}#news{--ac:#0b7285;--ic:"📢"}#groups-sec{--ac:#1560c8;--ic:"🔎"}#about{--ac:#8a5a00;--ic:"🏛"}#contact{--ac:#c2255c;--ic:"📍"}
+main section[id] h2{background:color-mix(in srgb,var(--ac) 12%,var(--bg));border:0!important;border-left:10px solid var(--ac)!important;padding:10px 14px!important;border-radius:6px;font-size:1.6rem;color:var(--tx)}
+main section[id] h2::before{content:var(--ic);background:none;width:auto;height:auto;margin-right:.4em;font-size:1.3em;vertical-align:-.1em}
+main section[id] h2::first-letter{color:inherit}
+main section[id] h3{color:var(--tx);border-bottom:3px solid var(--ac);display:inline-block;padding-bottom:2px}
+main section[id] .card{border-left:8px solid var(--ac);background:color-mix(in srgb,var(--ac) 7%,var(--bg))}
+main section[id] .tag{border-color:var(--ac);color:var(--tx);background:var(--bg)}
+main section[id] a{color:var(--ac)}
+main section[id] #groups li{border-left:6px solid var(--ac)}
+.entry .btn:nth-child(1){background:#c2410c}.entry .btn:nth-child(2){background:#237a35}.entry .btn:nth-child(3){background:#1560c8}.entry .btn:nth-child(4){background:#862e9c}
+.entry .btn{font-size:1.2rem}.entry .btn small{font-size:1rem;margin-top:2px}
+ul.news li{border-bottom:2px dotted var(--line)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) main section[id] a{color:#a9cbff}}
+.btn{box-shadow:0 2px 0 rgba(18,48,107,.25);border:1px solid rgba(255,255,255,.3)}
+.card{box-shadow:0 1px 3px rgba(18,48,107,.12);border-width:1px;border-left:5px solid var(--blue)}
+.tag{background:var(--bg)}
+footer{border-top:4px solid var(--blue);background:var(--soft)}
+nav ul{list-style:none;margin:8px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+nav a{display:block;padding:8px 12px;background:#fff;color:#12306b;border-radius:8px;text-decoration:none;font-weight:700;font-size:1rem}
+.proto{background:#fff6d6;color:#3b2f00;padding:10px 16px;font-size:1rem;border-bottom:2px solid #f5a300}
+main{max-width:860px;margin:0 auto;padding:0 16px 48px}
+section{margin-top:40px}
+h2{color:var(--navy);border-left:8px solid var(--blue);padding-left:12px;font-size:1.5rem;line-height:1.5}
+h3{color:var(--navy);font-size:1.2rem;margin:24px 0 8px}
+.entry{display:grid;gap:12px;grid-template-columns:1fr 1fr}
+@media(max-width:560px){.entry{grid-template-columns:1fr}}
+.btn{display:block;padding:18px 16px;background:var(--blue);color:#fff;border-radius:12px;text-decoration:none;font-weight:700;min-height:64px}
+.btn small{display:block;font-weight:400;font-size:.9rem}
+.card{border:2px solid var(--line);border-radius:12px;padding:12px 16px;margin:12px 0;background:var(--soft)}
+.card h4{margin:0 0 4px;font-size:1.1rem}
+.tag{display:inline-block;border:2px solid var(--navy);color:var(--navy);border-radius:6px;padding:0 8px;font-size:.9rem;font-weight:700;margin-right:6px}
+dl{margin:8px 0;display:grid;grid-template-columns:7em 1fr;gap:2px 8px}dt{font-weight:700}dd{margin:0}
+@media(max-width:560px){dl{grid-template-columns:1fr}dd{margin-bottom:6px}}
+ul.news{list-style:none;padding:0}ul.news li{padding:8px 0;border-bottom:1px solid var(--line)}
+input[type=search]{font:inherit;width:100%;padding:12px;border:2px solid var(--navy);border-radius:8px;background:var(--bg);color:var(--tx)}
+#groups{list-style:none;padding:0;display:grid;gap:8px;grid-template-columns:1fr 1fr}
+@media(max-width:560px){#groups{grid-template-columns:1fr}}
+#groups li{border:2px solid var(--line);border-radius:10px;padding:8px 12px;line-height:1.6}
+details{margin:8px 0}summary{cursor:pointer;font-weight:700;padding:8px 0}
+footer{background:var(--soft);padding:16px;text-align:center;font-size:1rem}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">本文へ移動</a>
+<header>
+<h1>戸塚区体育協会</h1>
+<p class="sub">区民のスポーツ活動の育成振興と、健康増進・親睦のために</p>
+<nav aria-label="メインメニュー"><ul>
+<li><a href="#events">大会・イベント</a></li>
+<li><a href="#news">お知らせ</a></li>
+<li><a href="#groups-sec">加盟団体</a></li>
+<li><a href="#about">協会について</a></li>
+<li><a href="#contact">問い合わせ・アクセス</a></li>
+</ul></nav>
+</header>
+<div class="proto" role="note">これはデザインの見本です。団体の公式サイトではありません。内容は元サイトの情報をもとにしており、過去の情報を含みます。</div>
+<main id="main">
+
+<section aria-labelledby="entry-h">
+<h2 id="entry-h">知りたいことから探す</h2>
+<div class="entry">
+<a class="btn" href="#events">大会・イベントを探す<small>過去の大会案内を年度別に見られます</small></a>
+<a class="btn" href="#class">教室・体験について<small>確認できた情報をまとめています</small></a>
+<a class="btn" href="#groups-sec">競技・加盟団体を探す<small>競技名で絞り込めます</small></a>
+<a class="btn" href="#results">大会結果を見る<small>確認できた結果を掲載しています</small></a>
+</div>
+</section>
+
+<section id="events" aria-labelledby="events-h">
+<h2 id="events-h">大会・イベント</h2>
+<p><strong>現在、元サイトで確認できる受付中の大会・教室はありません。</strong>下の情報はすべて過去の開催分です。</p>
+
+<h3>平成28年度（2016年度）</h3>
+<article class="card" id="e-t17"><h4>第17回 戸塚区体育協会会長杯卓球大会（ダブルス）</h4>
+<p><span class="tag">受付終了</span>過去の開催</p>
+<dl><dt>日時</dt><dd>2016年4月3日（日）9時30分から</dd><dt>会場</dt><dd>戸塚スポーツセンター</dd><dt>申込期間</dt><dd>2016年2月20日（土）から3月5日（土）</dd><dt>資料</dt><dd><a href="http://totsukataikyou.web.fc2.com/takkyu/1617wy.pdf">要項（PDF・容量は未確認）</a></dd></dl></article>
+
+<article class="card" id="e-b160"><h4>第160回 戸塚区民バドミントン大会「会長杯の部」</h4>
+<p><span class="tag">受付終了</span>過去の開催</p>
+<dl><dt>日時</dt><dd>2016年4月24日（日）9時から</dd><dt>会場</dt><dd>戸塚スポーツセンター</dd><dt>種目</dt><dd>男子ダブルス／女子ダブルス</dd><dt>申込</dt><dd>2016年4月4日から7日（8時から21時の間）。所定の書式を使用</dd><dt>問い合わせ</dt><dd>電話・FAX 045-862-6670（当時の担当：畠山敬子）</dd><dt>主催等</dt><dd>主催：戸塚区体育協会／主管：戸塚区バドミントン協会／後援：戸塚区役所</dd><dt>詳細</dt><dd><a href="http://totsukabkyoukai.web.fc2.com/">戸塚区バドミントン協会ホームページ</a>（新着情報→会長杯の要項）</dd></dl></article>
+
+<article class="card"><h4>第86回 戸塚区民卓球大会（シングルス）</h4>
+<p><span class="tag">受付終了</span>過去の開催</p>
+<dl><dt>日時</dt><dd>2016年8月21日（日）9時30分から</dd><dt>会場</dt><dd>戸塚スポーツセンター</dd></dl></article>
+
+<article class="card"><h4>第87回 戸塚区民卓球大会（団体）</h4>
+<p><span class="tag">受付終了</span>過去の開催</p>
+<dl><dt>日時</dt><dd>2017年1月9日（月）9時30分から</dd><dt>会場</dt><dd>戸塚スポーツセンター</dd></dl></article>
+
+<h3>平成27年度（2015年度）</h3>
+<article class="card" id="e-dance"><h4>第2回 区民社交ダンス交流会</h4>
+<p><span class="tag">受付終了</span>過去の開催</p>
+<dl><dt>日時</dt><dd>2016年3月13日（日）13時から16時30分</dd><dt>会場</dt><dd>戸塚スポーツセンター・第2体育室</dd><dt>会費</dt><dd>当日1,500円／前売1,200円</dd><dt>内容</dt><dd>フリーダンスタイム、ミキシング、トライアル、技術講習（ワルツ・タンゴの基本）</dd><dt>講師</dt><dd>吉田大治郎・吉田美園 組（元全日本選手権スタンダードチャンピオン、現WDSF公認審判員と紹介されています）</dd><dt>主催等</dt><dd>主催：戸塚区体育協会／主管：戸塚区スポーツダンス協会</dd><dt>資料</dt><dd><a href="http://finestep.web.fc2.com/KG2.xls">チラシ（Excelファイル・容量は未確認）</a></dd></dl></article>
+
+<article class="card" id="e-b159"><h4>第159回 戸塚区民バドミントン大会「オープンの部」</h4>
+<p><span class="tag">受付終了</span>過去の開催</p>
+<dl><dt>日時</dt><dd>2016年1月30日（土）9時から</dd><dt>会場</dt><dd>戸塚スポーツセンター</dd><dt>種目</dt><dd>男子ダブルス／女子ダブルス</dd><dt>申込</dt><dd>2016年1月11日から14日（8時から21時の間）。所定の書式を使用</dd><dt>問い合わせ</dt><dd>電話・FAX 045-862-6670（当時の担当：畠山敬子）</dd><dt>主催等</dt><dd>主催：戸塚区体育協会／主管：戸塚区バドミントン協会／後援：戸塚区役所</dd></dl></article>
+
+<h3>平成23年度（2011年度）</h3>
+<article class="card" id="e-walk"><h4>協会事業「区民まつり会場に向かって、みんなで歩こう」</h4>
+<p><span class="tag">受付終了</span>過去の開催</p>
+<dl><dt>日時</dt><dd>11月3日（元サイトに年の記載なし。平成23年度の事業として掲載）</dd><dt>資料</dt><dd><a href="http://totsukataikyou.web.fc2.com/hp/siryou/20110903.pdf">ウォーク報告書（PDF・容量は未確認）</a></dd></dl></article>
+<article class="card"><h4>新春交流会</h4>
+<p><span class="tag">受付終了</span>過去の開催</p>
+<dl><dt>日時</dt><dd>1月下旬</dd><dt>会場</dt><dd>未定（元サイトの記載のまま。詳細は後報とされていました）</dd></dl></article>
+<p>専門部・少年スポーツ団体・各地区の事業計画は <a href="http://totsukataikyou.web.fc2.com/hp/siryou/2011jigyou.pdf">平成23年度 事業一覧（PDF・容量は未確認）</a> に掲載されています。</p>
+</section>
+
+<section id="class" aria-labelledby="class-h">
+<h2 id="class-h">教室・体験に参加する</h2>
+<p>現在、元サイトで確認できる教室・体験の募集はありません。</p>
+<p>なぎなた協会は、初心者講習会を開き、毎週日曜日に稽古を行っていると紹介されています。次回の日程や場所は確認できていません。</p>
+</section>
+
+<section id="results" aria-labelledby="results-h">
+<h2 id="results-h">大会結果を見る</h2>
+<article class="card" id="r-golf"><h4>戸塚区ゴルフ協会 第36回競技大会 結果</h4>
+<p><span class="tag">結果報告</span>過去の開催</p>
+<dl><dt>日付</dt><dd>2015年11月19日</dd><dt>会場</dt><dd>鎌倉カントリークラブ</dd><dt>結果</dt><dd>優勝 斉藤紀男さん／2位 加藤昭さん／3位 吉田裕紀さん</dd><dt>次回</dt><dd>「来年4月、5月頃を予定」と案内されていました。</dd></dl></article>
+</section>
+
+<section id="news" aria-labelledby="news-h">
+<h2 id="news-h">お知らせ（新しい順）</h2>
+<ul class="news">
+<li>2016年3月9日 <span class="tag">大会案内</span><a href="#e-dance">第2回区民社交ダンス交流会</a></li>
+<li>2016年2月16日 <span class="tag">大会案内</span><a href="#e-t17">2016年度の卓球大会</a></li>
+<li>2016年2月2日 <span class="tag">大会案内</span><a href="#e-b160">第160回区民バドミントン大会（会長杯の部）</a></li>
+<li>2015年12月14日 <span class="tag">大会案内</span><a href="#e-b159">第159回区民バドミントン大会（オープンの部）</a></li>
+<li>2015年11月21日 <span class="tag">大会結果</span><a href="#r-golf">ゴルフ協会 第36回競技大会の結果</a></li>
+<li>2011年12月13日 <span class="tag">サイト更新</span>協会トップの写真を、その年のウォークの写真に変更</li>
+<li>2011年12月5日 <span class="tag">サイト更新</span>協会事業を更新／加盟団体の年度末提出資料をダウンロードできるようにした</li>
+</ul>
+<p>上の一覧は、元サイトの更新履歴と、元サイトのブログ記事から作っています。</p>
+</section>
+
+<section id="groups-sec" aria-labelledby="groups-h">
+<h2 id="groups-h">競技・加盟団体を探す</h2>
+<p>元サイトに載っている24団体です。「創立／加盟」は元サイトの表記のままです。各団体の紹介文は、なぎなた協会以外は未掲載です。</p>
+<label for="q"><strong>競技名で絞り込む</strong>（例：卓球、バド）</label>
+<input id="q" type="search" autocomplete="off">
+<p id="count" aria-live="polite"></p>
+<ul id="groups"></ul>
+<h3>なぎなた協会の紹介（元サイトより）</h3>
+<p>地域に根ざした活動と、なぎなたの理念に基づく指導を行い、多くの人に愛されるなぎなたを目指しています。初心者講習会の開催、毎週日曜日の稽古、年1回の戸塚区民なぎなた大会、市民大会・県大会・研修会への参加を行っています。</p>
+</section>
+
+<section id="about" aria-labelledby="about-h">
+<h2 id="about-h">協会について</h2>
+<p>戸塚区のスポーツの普及と振興を目的に、種目ごとの大会やスポーツ教室を開いている団体です。</p>
+<details><summary>平成23年度の役員（当時）</summary>
+<p>会長 松田良昭／副会長 金子正治、柴田武志、高村佐太郎</p></details>
+<details><summary>賛助会員の募集（元サイトの記載）</summary>
+<p>会則の抜粋では、会費は次のとおりです。</p>
+<ul><li>各世帯：年額30円</li><li>賛助会費（団体）：年額1口2,000円</li><li>賛助会費（個人）：年額1口1,000円</li></ul>
+<p>入会は、払込取扱票を使った郵便振替です。個人会費を直接納める場合は、賛助会員申込書で申し込みます。</p></details>
+<p><a href="http://totsukataikyou.web.fc2.com/hp/siryou/KAISOKU.pdf">戸塚区体育協会会則（PDF・容量は未確認）</a></p>
+</section>
+
+<section id="contact" aria-labelledby="contact-h">
+<h2 id="contact-h">問い合わせ・アクセス</h2>
+<dl><dt>所在地</dt><dd>〒244-0816 横浜市戸塚区上倉田町477番地（戸塚スポーツセンター2階）</dd></dl>
+<p>個人情報の扱いは、元サイトの <a href="http://totsukataikyou.web.fc2.com/hp/porisi.html">プライバシーポリシー</a> をご覧ください。</p>
+<h3>関連リンク</h3>
+<ul>
+<li><a href="http://totsukataikyou.web.fc2.com/hp/index.html">元のホームページ</a></li>
+<li><a href="http://totsukataikyou.blog113.fc2.com/">元のブログ（加盟団体の記事）</a></li>
+<li><a href="https://yokohama-sport.or.jp/members/sports_org/">横浜市スポーツ協会 加盟団体一覧</a></li>
+<li><a href="http://www.city.yokohama.lg.jp/totsuka/">戸塚区役所</a></li>
+</ul>
+</section>
+</main>
+<footer>戸塚区体育協会（見本）／元サイトの情報をもとに作成</footer>
+
+<script>
+var G=[["剣道連盟","昭和31年","昭和31年",16],["野球協会","昭和23年","昭和33年",17],["陸上競技協会","昭和37年","昭和37年",18],["スキー協会","昭和41年","昭和41年",1],["バレーボール協会","昭和46年","昭和46年",19],["卓球協会","昭和48年","昭和48年",2],["テニス協会","昭和48年","昭和48年",20],["レクリエーション協会","昭和50年","昭和50年",21],["柔道会","昭和52年","昭和52年",22],["ソフトボール協会","昭和55年","昭和55年",23],["バドミントン協会","昭和55年","昭和55年",3],["弓道協会","昭和61年","昭和61年",24],["ゲートボール協会","昭和61年","平成3年",25],["なぎなた協会","昭和35年","昭和56年",26],["少年野球連盟","昭和52年","昭和52年",27],["ソフトテニス連盟","昭和50年","昭和54年",28],["ボウリング協会","昭和63年","平成4年",4],["綱引連盟","平成元年","平成元年",35],["スポーツダンス協会","平成8年","平成13年",5],["少年サッカークラブ","昭和39年","昭和52年",29],["ミニバスケットボール連盟","昭和50年","昭和52年",30],["ゴルフ協会","平成17年","平成19年",32],["バスケットボール協会","平成16年","平成19年",6],["合気道連盟","",""]];
+var ul=document.getElementById("groups"),q=document.getElementById("q"),c=document.getElementById("count");
+function draw(){var k=q.value.trim(),n=0;ul.innerHTML="";G.forEach(function(g){if(k&&g[0].indexOf(k)<0&&!(k==="バド"&&g[0].indexOf("バドミントン")===0))return;n++;var li=document.createElement("li");var t="<strong>"+g[0]+"</strong><br>"+(g[1]?"創立 "+g[1]+"／加盟 "+g[2]:"創立・加盟年：元サイトに記載なし");if(g[3]){t+='<br><a href="http://totsukataikyou.blog113.fc2.com/blog-category-'+g[3]+'.html">元ブログの記事を見る</a>'}else{t+='<br><a href="http://totsukataikyou.blog113.fc2.com/">元ブログを見る</a>'}li.innerHTML=t;ul.appendChild(li)});c.textContent=n+"団体が見つかりました";}
+q.addEventListener("input",draw);draw();
+</script>
+</body>
+</html>
